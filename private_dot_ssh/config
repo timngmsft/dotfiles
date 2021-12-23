@@ -5,7 +5,10 @@
 Host msft.com
     HostName github.com
     User git
-    IdentityAgent ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+    #IdentityAgent ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+	IdentityAgent ~/.kr/krd-agent.sock
+	ProxyCommand krssh %h %p
+	IdentityFile ~/.ssh/id_krypton
 
 # Added by Krypton
 Host github.com
@@ -14,7 +17,3 @@ Host github.com
 	IdentityAgent ~/.kr/krd-agent.sock
 	ProxyCommand krssh %h %p
 	IdentityFile ~/.ssh/id_krypton
-	IdentityFile ~/.ssh/id_ed25519
-	IdentityFile ~/.ssh/id_rsa
-	IdentityFile ~/.ssh/id_ecdsa
-	IdentityFile ~/.ssh/id_dsa
