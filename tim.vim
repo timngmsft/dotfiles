@@ -1,0 +1,1 @@
+source ~/tim.settings.vim

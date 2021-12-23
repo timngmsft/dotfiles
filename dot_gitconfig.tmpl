@@ -1,0 +1,25 @@
+[core]
+  autocrlf = false
+  editor = vim
+  excludesfile = ~/.config/git/gitignore
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+  co = checkout
+  cob = checkout -b
+  cm = commit -m
+  bv = branch -vv
+
+[pull]
+    rebase = true
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+# https://www.motowilliams.com/conditional-includes-for-git-config
+[includeIf "gitdir:~/msft_src/"]
+    path = ~/.config/code/msft/.gitconfig
+
+[includeIf "gitdir:~/src/"]
+    path = ~/.config/code/personal/.gitconfig

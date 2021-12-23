@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 02d07f3e3dba0d50b1d907a8062bbaca18f88478 tim <tim@tims-MacBook-Air.local> 1616722927 -0700	clone: from https://github.com/ohmyzsh/ohmyzsh.git
+02d07f3e3dba0d50b1d907a8062bbaca18f88478 3f50482674c2b3153590a4aba92fbfa1c01bc583 timngmsft <timngmsft@hotmail.com> 1617857708 -0700	pull --rebase --stat origin master: checkout 3f50482674c2b3153590a4aba92fbfa1c01bc583
+3f50482674c2b3153590a4aba92fbfa1c01bc583 3f50482674c2b3153590a4aba92fbfa1c01bc583 timngmsft <timngmsft@hotmail.com> 1617857708 -0700	rebase finished: refs/heads/master onto 3f50482674c2b3153590a4aba92fbfa1c01bc583
+3f50482674c2b3153590a4aba92fbfa1c01bc583 706b2f3765d41bee2853b17724888d1a3f6f00d9 timngmsft <timngmsft@hotmail.com> 1622613195 -0700	pull --rebase --stat origin master (start): checkout 706b2f3765d41bee2853b17724888d1a3f6f00d9
+706b2f3765d41bee2853b17724888d1a3f6f00d9 706b2f3765d41bee2853b17724888d1a3f6f00d9 timngmsft <timngmsft@hotmail.com> 1622613195 -0700	pull --rebase --stat origin master (finish): returning to refs/heads/master
+706b2f3765d41bee2853b17724888d1a3f6f00d9 e32d4b1e195f4c7777844beea97af42bd93434eb timngmsft <timngmsft@hotmail.com> 1624898536 -0700	pull --rebase --stat origin master (start): checkout e32d4b1e195f4c7777844beea97af42bd93434eb
+e32d4b1e195f4c7777844beea97af42bd93434eb e32d4b1e195f4c7777844beea97af42bd93434eb timngmsft <timngmsft@hotmail.com> 1624898536 -0700	pull --rebase --stat origin master (finish): returning to refs/heads/master
+e32d4b1e195f4c7777844beea97af42bd93434eb 36f444ed7325720ec05f182781ec7d6c9a4d675c timngmsft <timngmsft@hotmail.com> 1626056295 -0700	pull --rebase --stat origin master (start): checkout 36f444ed7325720ec05f182781ec7d6c9a4d675c
+36f444ed7325720ec05f182781ec7d6c9a4d675c 36f444ed7325720ec05f182781ec7d6c9a4d675c timngmsft <timngmsft@hotmail.com> 1626056295 -0700	pull --rebase --stat origin master (finish): returning to refs/heads/master

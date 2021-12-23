@@ -1,0 +1,8 @@
+[data]
+    name = "teemobean"
+    email = "teemobean@gmail.com"
+    name_msft = "timngmsft"
+    email_msft = "timngmsft@hotmail.com"
+
+[data.machine]
+    brew_path = '{{ if eq .chezmoi.arch "amd64" }}/usr/local/bin{{ else }}/opt/homebrew/bin{{ end }}'

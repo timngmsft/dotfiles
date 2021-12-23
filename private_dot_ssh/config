@@ -1,0 +1,20 @@
+
+# This is for Microsoft repos
+# When cloning, change clone name to git@msft.com
+# This then uses the appropriate SSH key
+Host msft.com
+    HostName github.com
+    User git
+    IdentityAgent ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
+# Added by Krypton
+Host github.com
+    HostName github.com
+    User git
+	IdentityAgent ~/.kr/krd-agent.sock
+	ProxyCommand krssh %h %p
+	IdentityFile ~/.ssh/id_krypton
+	IdentityFile ~/.ssh/id_ed25519
+	IdentityFile ~/.ssh/id_rsa
+	IdentityFile ~/.ssh/id_ecdsa
+	IdentityFile ~/.ssh/id_dsa
