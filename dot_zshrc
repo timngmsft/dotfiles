@@ -111,6 +111,7 @@ alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias cd=z
 alias cd-=popd
 alias b=bat
+alias nnn="~/src/macos/nnn.git/nnn"
 
 # git
 alias c="git checkout"
