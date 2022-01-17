@@ -162,8 +162,16 @@ function _mvim {
         mvim "$1"
     fi
 }
+function _neovide {
+    if chezmoi source-path "$1" 2>/dev/null; then
+        chezmoi edit "$1"
+    else
+        ~/src/macos/neovide.git/target/release/neovide "$1"
+    fi
+}
 alias e=_vim
 alias ee=_mvim
+alias ne=_neovide
 
 # Secretive Config
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
