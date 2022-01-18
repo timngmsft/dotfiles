@@ -113,6 +113,8 @@ alias cd=z
 alias cd-=popd
 alias b=bat
 alias nnn="~/src/macos/nnn.git/nnn"
+export NNN_PLUG='o:fzopen;v:!~/src/macos/neovide.git/target/release/neovide $nnn*'
+export NNN_FIFO=/tmp/nnn.fifo
 
 # git
 alias c="git checkout"
