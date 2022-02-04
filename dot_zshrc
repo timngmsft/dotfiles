@@ -105,8 +105,9 @@ export EDITOR='mvim -f --nomru'
 
 # aliases
 alias u="cd .."
-alias d="ls -lG"
-alias da="ls -alG"
+alias d="exa -l"
+alias da="exa -al"
+alias dt="exa -T"
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias cd=z

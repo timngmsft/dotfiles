@@ -13,14 +13,13 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'morhetz/gruvbox'
 Plugin 'tomasr/molokai'
-Plugin 'tpope/vim-fugitive'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'DrawIt'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'xolox/vim-misc'
@@ -85,9 +84,12 @@ set nofoldenable
 
 " Tabs and indents
 set expandtab
-set tabstop=4
-set sw=4
+set tabstop=2
+set sw=2
 set cinoptions+=(0,W1s
+
+" indent-guides
+let g:indent_guides_enable_on_vim_startup=1
 
 " Completion
 set completeopt=longest,menuone
@@ -205,15 +207,11 @@ set path=.,$VIM_FILES_PATH
 " set wildignore
 set wildignore+=*.class
 
-" Autocmds for nerdtree
-" TODO: This doesn't work for some reason.
-"autocmd BufRead *.java,*.cs,*.c,*.cpp,*.h,*.hpp,*.idl,*.vb,*.rb,*.erb,*.css,*.html,*.xml,*.vim,*.asp,*.aspx execute ":NERDTreeToggle"
-
 " Autocmds for F# files
 autocmd BufRead,BufNewFile *.fs,*.fsx,*.fsi,*.ml set mat=2 sm
 
 " Autocmds for C/C++ files.
-autocmd BufRead,BufNewFile *.java,*.cs,*.c,*.cpp,*.h,*.hpp,*.idl set sm mat=2 sw=4
+autocmd BufRead,BufNewFile *.java,*.cs,*.c,*.cpp,*.h,*.hpp,*.idl set sm mat=2
 
 " Autocmds for VB files
 autocmd BufRead,BufNewFile *.vb setlocal filetype=vbnet
@@ -231,6 +229,7 @@ autocmd BufRead,BufNewFile *.css set sw=2 tabstop=2
 " Autocmds for JS
 autocmd BufRead,BufNewFile *.js set sw=2 tabstop=2
 autocmd BufRead,BufNewFile *.json set sw=2 tabstop=2
+autocmd BufRead,BufNewFile *.ts set sw=2 tabstop=2
 
 " Autocmds for asp/aspx
 autocmd BufRead,BufNewFile *.asp,*.aspx set sw=4 tabstop=4
