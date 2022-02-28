@@ -3,17 +3,23 @@
 # When cloning, change clone name to git@msft.com
 # This then uses the appropriate SSH key
 Host msft.com
-    HostName github.com
-    User git
-    #IdentityAgent ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
-	IdentityAgent ~/.kr/krd-agent.sock
-	ProxyCommand krssh %h %p
-	IdentityFile ~/.ssh/id_krypton
+  HostName github.com
+  User git
+  IdentityAgent ~/.kr/krd-agent.sock
+  ProxyCommand krssh %h %p
+  IdentityFile ~/.ssh/id_krypton
 
 # Added by Krypton
 Host github.com
-    HostName github.com
-    User git
-	IdentityAgent ~/.kr/krd-agent.sock
-	ProxyCommand krssh %h %p
-	IdentityFile ~/.ssh/id_krypton
+  HostName github.com
+  User git
+  IdentityAgent ~/.kr/krd-agent.sock
+  ProxyCommand krssh %h %p
+  IdentityFile ~/.ssh/id_krypton
+
+Host vs-ssh.visualstudio.com
+  HostName vs-ssh.visualstudio.com
+  User msazure
+  IdentityAgent ~/.kr/krd-agent.sock
+  ProxyCommand krssh %h %p
+  IdentityFile ~/.ssh/id_krypton

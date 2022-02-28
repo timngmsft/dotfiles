@@ -166,6 +166,13 @@ function _mvim {
         mvim "$1"
     fi
 }
+function _nvim {
+    if chezmoi source-path "$1" 2>/dev/null; then
+        chezmoi edit "$1"
+    else
+        nvim "$1"
+    fi
+}
 function _neovide {
     if chezmoi source-path "$1" 2>/dev/null; then
         chezmoi edit "$1"
@@ -176,6 +183,7 @@ function _neovide {
 alias e=_vim
 alias ee=_mvim
 alias ne=_neovide
+alias nv=_nvim
 
 # Secretive Config
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
