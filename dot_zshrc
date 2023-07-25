@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export TERM="xterm-256color"
-export ZSH=/Users/tim/.oh-my-zsh
+# export ZSH=/Users/tim/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -58,7 +58,7 @@ plugins=(
     vi-mode
 )
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 prompt_context() {
     local seq
@@ -101,7 +101,7 @@ prompt_context() {
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=$PATH:~/src/macos/nnn.git
-export EDITOR='mvim -f --nomru'
+export EDITOR='vim -f'
 
 # aliases
 alias u="cd .."
@@ -113,9 +113,6 @@ alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias cd=z
 alias cd-=popd
 alias b=bat
-alias nnn="~/src/macos/nnn.git/nnn"
-export NNN_PLUG='o:fzopen;v:!~/src/macos/neovide.git/target/release/neovide $nnn*'
-export NNN_FIFO=/tmp/nnn.fifo
 
 # git
 alias c="git checkout"
@@ -150,7 +147,7 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 # source ~/src/osx/powerlevel9k.git/powerlevel9k.zsh-theme
 
 eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 function _vim {
     if chezmoi source-path "$1" 2>/dev/null; then
@@ -159,31 +156,5 @@ function _vim {
         vim "$1"
     fi
 }
-function _mvim {
-    if chezmoi source-path "$1" 2>/dev/null; then
-        chezmoi edit "$1"
-    else
-        mvim "$1"
-    fi
-}
-function _nvim {
-    if chezmoi source-path "$1" 2>/dev/null; then
-        chezmoi edit "$1"
-    else
-        nvim "$1"
-    fi
-}
-function _neovide {
-    if chezmoi source-path "$1" 2>/dev/null; then
-        chezmoi edit "$1"
-    else
-        ~/src/macos/neovide.git/target/release/neovide "$1"
-    fi
-}
-alias e=_vim
-alias ee=_mvim
-alias ne=_neovide
-alias nv=_nvim
-
-# Secretive Config
-export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+alias e=vim
+alias _e=_vim
