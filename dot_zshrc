@@ -116,9 +116,9 @@ export PATH=$PATH:"$XDG_DATA_HOME"/cargo/bin
 
 # aliases
 alias u="cd .."
-alias d="exa -l"
-alias da="exa -al"
-alias dt="exa -T"
+alias d="eza -l"
+alias da="eza -al"
+alias dt="eza -T"
 alias where=which
 alias rdss="find . -name '*.DS_Store' -type f -ls -delete"
 alias cd=z
