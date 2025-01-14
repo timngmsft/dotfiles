@@ -24,6 +24,11 @@
 #  ProxyCommand krssh %h %p
 #  IdentityFile ~/.ssh/id_krypton
 
+Host emu.com
+  HostName github.com
+  User git
+  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/19fa545e866e3249c92b04cf1f85c1c5.pub
+
 # Secretive
 Host *
 	IdentityAgent /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
