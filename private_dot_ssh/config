@@ -27,8 +27,14 @@
 Host emu.com
   HostName github.com
   User git
-  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/19fa545e866e3249c92b04cf1f85c1c5.pub
+  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/c593388249e8a5a976b0bdc368898ff8.pub
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/49dd5dd412a1a5de64784c5363c87017.pub
 
 # Secretive
 Host *
 	IdentityAgent /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
