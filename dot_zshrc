@@ -160,7 +160,7 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 eval "$(zoxide init zsh)"
 # eval "$(starship init zsh)"
 
-function _vim {
+function vimchezmoi {
     if chezmoi source-path "$1" 2>/dev/null; then
         chezmoi edit "$1"
     else
@@ -168,6 +168,6 @@ function _vim {
     fi
 }
 alias e=vim
-alias _e=_vim
+alias _e=vimchezmoi
 
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
