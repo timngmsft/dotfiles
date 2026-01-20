@@ -129,7 +129,9 @@ set showbreak=++++
 set shortmess=imnrwx
 
 " set the guioptions.
-set guioptions=aeirM
+if !has('nvim')
+  set guioptions=aeirM
+endif
 
 " Lets keep some global viminfo
 set viminfo='20,\"50

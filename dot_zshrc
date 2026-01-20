@@ -167,7 +167,8 @@ function vimchezmoi {
         vim "$1"
     fi
 }
-alias e=vim
+alias e=nvim
+alias ee=vim
 alias _e=vimchezmoi
 
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
