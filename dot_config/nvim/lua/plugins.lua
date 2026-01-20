@@ -4,25 +4,18 @@ return {
   { "morhetz/gruvbox" },
   { "tomasr/molokai" },
 
-  -- UI
-  { "nathanaelkane/vim-indent-guides" },
-  {
-    "vim-airline/vim-airline",
-    dependencies = { "vim-airline/vim-airline-themes" },
-  },
-  { "bling/vim-bufferline" },
-
   -- Editing
   { "tpope/vim-surround" },
   { "easymotion/vim-easymotion" },
-  { "scrooloose/nerdcommenter" },
+  {
+      "XXiaoA/atone.nvim",
+      cmd = "Atone",
+      opts = {},
+  },
 
   -- Git
   { "airblade/vim-gitgutter" },
 
-  -- Tags
-  { "xolox/vim-misc" },
-  { "majutsushi/tagbar" },
 
   -- CodeCompanion dependencies
   { "nvim-lua/plenary.nvim" },
