@@ -138,6 +138,10 @@ alias cm="git commit -m "
 alias bvv="git branch -vv"
 alias add="git add"
 
+# Apple stuff
+alias ds_1="defaults write com.apple.desktopservices DSDontWriteNetworkStores true"
+alias ds_2="defaults write com.apple.desktopservices DSDontWriteUSBStores -bool false"
+
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
