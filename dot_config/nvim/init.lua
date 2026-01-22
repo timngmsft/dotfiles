@@ -47,6 +47,8 @@ require("lazy").setup({
   },
   { "folke/tokyonight.nvim", lazy = true },
   { "ellisonleao/gruvbox.nvim", lazy = true },
+  { "Mofiqul/dracula.nvim", lazy = true },
+  { "EdenEast/nightfox.nvim" },
 
   -- Plenary (required by many plugins)
   { "nvim-lua/plenary.nvim" },
