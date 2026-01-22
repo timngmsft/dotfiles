@@ -13,7 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Basic settings
-vim.g.mapleader = " "
+vim.g.mapleader = "\\"
 vim.g.maplocalleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
