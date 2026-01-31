@@ -65,26 +65,15 @@ require("lazy").setup({
     },
   },
 
-  -- CodeCompanion
+  -- Claude Code
   {
-    "olimorris/codecompanion.nvim",
-    version = "^18.0.0",
+    "greggh/claude-code.nvim",
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
+      "nvim-lua/plenary.nvim", -- Required for git operations
     },
     config = function()
-      require("codecompanion").setup({
-        strategies = {
-          chat = { adapter = "anthropic" },
-          inline = { adapter = "anthropic" },
-        },
-      })
-      -- Keymaps for CodeCompanion
-      vim.keymap.set("n", "<leader>cc", "<cmd>CodeCompanionChat<cr>", { desc = "CodeCompanion Chat" })
-      vim.keymap.set("v", "<leader>cc", "<cmd>CodeCompanionChat<cr>", { desc = "CodeCompanion Chat" })
-      vim.keymap.set("n", "<leader>ca", "<cmd>CodeCompanionActions<cr>", { desc = "CodeCompanion Actions" })
-      vim.keymap.set("v", "<leader>ca", "<cmd>CodeCompanionActions<cr>", { desc = "CodeCompanion Actions" })
+      require("claude-code").setup()
+      vim.keymap.set("n", "<leader>cc", "<cmd>ClaudeCode<cr>", { desc = "Claude Code" })
     end,
   },
 
