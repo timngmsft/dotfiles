@@ -175,4 +175,6 @@ alias e=nvim
 alias ee=vim
 alias _e=vimchezmoi
 
+alias yy="open -a Yoink"
+
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
