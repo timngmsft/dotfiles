@@ -1,6 +1,12 @@
 font-family = "Berkeley Mono"
+font-thicken = true
 keybind = global:cmd+grave_accent=toggle_quick_terminal
 theme = Solarized Osaka Night
+
+macos-titlebar-style = transparent
+window-save-state = always
+shell-integration-features = no-cursor
+cursor-style = block
 
 # Splits
 keybind = cmd+d=new_split:right
