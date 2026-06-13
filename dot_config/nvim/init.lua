@@ -111,4 +111,13 @@ require("lazy").setup({
 
   -- Icons (used by lualine and telescope)
   { "nvim-tree/nvim-web-devicons" },
+
+  -- markdown-plus for markdown editing
+  {
+    "yousefhadder/markdown-plus.nvim",
+    ft = "markdown",
+    opts = {},
+  }
+
+
 })
