@@ -34,6 +34,11 @@ Host github.com
   User git
   IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/49dd5dd412a1a5de64784c5363c87017.pub
 
+Host github-timngdev.com
+  HostName github.com
+  User git
+  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/c74c8ecd045736fd35e76da25256500a.pub
+
 # Secretive
 Host *
 	IdentityAgent /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
