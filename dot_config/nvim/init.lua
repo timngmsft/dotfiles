@@ -109,6 +109,15 @@ require("lazy").setup({
     end,
   },
 
+  {
+      "oug-t/difi.nvim",
+      event = "VeryLazy",
+      keys = {
+          -- Context-aware: Syncs with CLI target (e.g. main) or defaults to HEAD
+          { "<leader>df", ":Difi<CR>", desc = "Toggle Difi" },
+      },
+  },
+
   -- Icons (used by lualine and telescope)
   { "nvim-tree/nvim-web-devicons" },
 
