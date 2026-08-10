@@ -36,10 +36,17 @@ Host github.com
   IdentityFile /Users/tim/.ssh/id_ed25519_timngmsft
   IdentitiesOnly yes
 
+#Host github-timngdev.com
+#  HostName github.com
+#  User git
+#  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/c74c8ecd045736fd35e76da25256500a.pub
+#
 Host github-timngdev.com
   HostName github.com
   User git
-  IdentityFile /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/PublicKeys/c74c8ecd045736fd35e76da25256500a.pub
+  AddKeysToAgent yes
+  IdentityFile /Users/tim/.ssh/id_ed25519_timngdev
+  IdentitiesOnly yes
 
 # Secretive
 Host *
