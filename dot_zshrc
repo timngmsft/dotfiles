@@ -125,18 +125,21 @@ alias cd=z
 alias cd-=popd
 alias b=bat
 
+alias hl="herdr --remote 192.168.1.153"
+alias ht="herdr --remote tims-mackbook-air-2"
+
 # git
-alias c="git checkout"
-alias cb="git checkout -b"
-alias pull="git pull"
-alias p="git push"
-alias gs="git status"
-alias gd="git diff"
-alias pu='(){ git push --set-upstream $1 $(git symbolic-ref --short HEAD); }'
-alias rebase="git rebase master"
-alias cm="git commit -m "
-alias bvv="git branch -vv"
-alias add="git add"
+#alias c="git checkout"
+#alias cb="git checkout -b"
+#alias pull="git pull"
+#alias p="git push"
+#alias gs="git status"
+#alias gd="git diff"
+#alias pu='(){ git push --set-upstream $1 $(git symbolic-ref --short HEAD); }'
+#alias rebase="git rebase master"
+#alias cm="git commit -m "
+#alias bvv="git branch -vv"
+#alias add="git add"
 
 # Apple stuff
 alias ds_1="defaults write com.apple.desktopservices DSDontWriteNetworkStores true"
