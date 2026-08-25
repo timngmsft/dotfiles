@@ -117,6 +117,15 @@ require("lazy").setup({
           { "<leader>df", ":Difi<CR>", desc = "Toggle Difi" },
       },
   },
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
+    opts = {},
+    keys = {
+      { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Diffview Open" },
+      { "<leader>gc", "<cmd>DiffviewClose<cr>", desc = "Diffview Close" },
+    },
+  },
 
   -- Icons (used by lualine and telescope)
   { "nvim-tree/nvim-web-devicons" },
