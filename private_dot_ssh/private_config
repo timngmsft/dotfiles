@@ -48,9 +48,9 @@ Host github-timngdev.com
   IdentityFile /Users/tim/.ssh/id_ed25519_timngdev
   IdentitiesOnly yes
 
-Host tims-macbook-air-2-ts
+Host herdr tims-macbook-air-2-ts
   HostName tims-macbook-air-2.tail931176.ts.net
-  User git
+  User tim
   AddKeysToAgent yes
   IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mba_14
   IdentitiesOnly yes
@@ -58,4 +58,3 @@ Host tims-macbook-air-2-ts
 # Secretive
 Host *
 	IdentityAgent /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
-
