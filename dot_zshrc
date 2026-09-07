@@ -127,7 +127,7 @@ alias cd-=popd
 alias b=bat
 
 alias hl="herdr --remote 192.168.1.153"
-alias ht="herdr --remote tims-mackbook-air-2"
+alias ht="herdr --remote tims-macbook-air-2.tail931176.ts.net"
 
 # git
 #alias c="git checkout"
