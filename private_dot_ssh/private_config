@@ -55,6 +55,13 @@ Host herdr tims-macbook-air-2-ts
   IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mba_14
   IdentitiesOnly yes
 
+Host tims-macbook-air-2-local
+  HostName 192.168.1.153
+  User tim
+  AddKeysToAgent yes
+  IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mba_14
+  IdentitiesOnly yes
+
 # Secretive
 Host *
 	IdentityAgent /Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
