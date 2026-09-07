@@ -146,6 +146,19 @@ alias ht="herdr --remote tims-macbook-air-2.tail931176.ts.net"
 alias ds_1="defaults write com.apple.desktopservices DSDontWriteNetworkStores true"
 alias ds_2="defaults write com.apple.desktopservices DSDontWriteUSBStores -bool false"
 
+function disableSleep {
+    sudo -v || return
+    sudo pmset -a sleep 0 &&
+        sudo pmset -a disablesleep 1
+}
+
+function enableSleep {
+    sudo -v || return
+    sudo pmset -a disablesleep 0 &&
+        sudo pmset -b sleep 1 &&
+        sudo pmset -c sleep 0
+}
+
 # Bear
 alias bearcli='/Applications/Bear.app/Contents/MacOS/bearcli'
 
