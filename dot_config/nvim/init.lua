@@ -45,13 +45,14 @@ require("lazy").setup({
     name = "catppuccin",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme("catppuccin")
+      vim.cmd.colorscheme("token")
     end,
   },
   { "folke/tokyonight.nvim", lazy = true },
   { "ellisonleao/gruvbox.nvim", lazy = true },
   { "Mofiqul/dracula.nvim", lazy = true },
   { "EdenEast/nightfox.nvim" },
+  { 'ThorstenRhau/token', version = '*' },
 
   -- Plenary (required by many plugins)
   { "nvim-lua/plenary.nvim" },
@@ -66,18 +67,6 @@ require("lazy").setup({
       auto_install = false,
       highlight = { enable = true },
     },
-  },
-
-  -- Claude Code
-  {
-    "greggh/claude-code.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim", -- Required for git operations
-    },
-    config = function()
-      require("claude-code").setup()
-      vim.keymap.set("n", "<leader>cc", "<cmd>ClaudeCode<cr>", { desc = "Claude Code" })
-    end,
   },
 
   -- Telescope (fuzzy finder)
