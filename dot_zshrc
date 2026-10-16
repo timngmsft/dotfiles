@@ -101,7 +101,6 @@ prompt_context() {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=$PATH:~/src/macos/nnn.git
 export EDITOR='vim -f'
 
@@ -113,7 +112,7 @@ export XDG_CACHE_HOME="$HOME"/.cache
 # For Rust
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
-export PATH=$PATH:"$XDG_DATA_HOME"/cargo/bin
+export PATH="$CARGO_HOME/bin:/opt/homebrew/opt/rustup/bin:$PATH"
 
 # aliases
 alias u="cd .."
@@ -202,3 +201,4 @@ alias _e=vimchezmoi
 alias yy="open -a Yoink"
 
 export SSH_AUTH_SOCK=/Users/tim/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -48,11 +48,18 @@ Host github-timngdev.com
   IdentityFile /Users/tim/.ssh/id_ed25519_timngdev
   IdentitiesOnly yes
 
-Host herdr tims-macbook-air-2-ts
+Host tims-macbook-air-2-ts
   HostName tims-macbook-air-2.tail931176.ts.net
   User tim
   AddKeysToAgent yes
   IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mba_14
+  IdentitiesOnly yes
+
+Host tims-mac-mini-ts
+  HostName tims-mac-mini.tail931176.ts.net
+  User tim
+  AddKeysToAgent yes
+  IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mac_mini
   IdentitiesOnly yes
 
 Host tims-macbook-air-2-local
@@ -60,6 +67,13 @@ Host tims-macbook-air-2-local
   User tim
   AddKeysToAgent yes
   IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mba_14
+  IdentitiesOnly yes
+
+Host tims-mac-mini-local
+  HostName 192.168.1.96
+  User tim
+  AddKeysToAgent yes
+  IdentityFile /Users/tim/.ssh/id_ed25519_herdr_mac_mini
   IdentitiesOnly yes
 
 # Secretive
