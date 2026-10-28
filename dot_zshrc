@@ -102,6 +102,7 @@ prompt_context() {
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:~/src/macos/nnn.git
+export PATH="/Users/tim/.local/bin:$PATH"
 export EDITOR='vim -f'
 
 # For XDG
